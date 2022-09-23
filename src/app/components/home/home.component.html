@@ -8,18 +8,46 @@
 </head>
 <body>
   <h1>Gerar</h1>
+
   <div class="form-group" [formGroup]="branchName">
-    <input type="number" class="form-control" formControlName="number" id="trf-number" placeholder="Número da tarefa">
-    <input type="text" class="form-control" formControlName="keywordOne" spellcheck="true" id="keyword" maxlenght="4" placeholder="Palavra-chave 1">
-    <input type="text" class="form-control" formControlName="keywordTwo" id="keyword" placeholder="Palavra-chave 2">
-    <input type="text" class="form-control" formControlName="keywordThree" id="keyword" placeholder="Palavra-chave 3">
-    <input type="text" class="form-control" formControlName="keywordFour" id="keyword" placeholder="Palavra-chave 4">
-    <div class="button-box">
-      <button (click)="buildBranchName()">Gerar</button>
+    <mat-form-field hintLabel="Max 6 characters" class="example-full-width" appearance="fill">
+      <mat-label>Número da tarefa</mat-label>
+      <input matInput type="number" class="form-control" #num max="999999" formControlName="number" id="trf-number" placeholder="Ex: 18536">
+      <mat-hint id="hint" align="end">{{num.value.length || 0}}/6</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+      <mat-label>Palavra-chave 1</mat-label>
+      <input matInput type="text" class="form-control" #one formControlName="keywordOne" maxlength="20" spellcheck="true" id="keyword" maxlenght="4" placeholder="Ex: erro">
+      <mat-hint id="hint" align="end">{{one.value.length || 0}}/20</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+      <mat-label>Palavra-chave 2</mat-label>
+      <input matInput type="text" class="form-control" #two formControlName="keywordTwo" maxlength="20" id="keyword" placeholder="Ex: finalizar">
+      <mat-hint id="hint" align="end">{{two.value.length || 0}}/20</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+      <mat-label>Palavra-chave 3</mat-label>
+      <input matInput type="text" class="form-control" #three formControlName="keywordThree" maxlength="20" id="keyword" placeholder="Ex: matricula">
+      <mat-hint id="hint" align="end">{{three.value.length || 0}}/20</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+      <mat-label>Palavra-chave 4</mat-label>
+      <input matInput type="text" class="form-control" #four formControlName="keywordFour" maxlength="20" id="keyword" placeholder="Ex: estudante">
+      <mat-hint id="hint" align="end">{{four.value.length || 0}}/20</mat-hint>
+    </mat-form-field>
+
+    <div class="button-box example-button-row">
+      <button mat-raised-button color="primary" (click)="buildBranchName()">Gerar</button>
     </div>
-    <div>
+
+    <!-- <div class="result">
       <span><strong>{{name}}</strong></span>
-    </div>
+      <button mat-raised-button color="accent" [cdkCopyToClipboard]="name">Copiar</button>
+    </div> -->
   </div>
 
 </body>
