@@ -7,6 +7,20 @@
   <title>Gerador de Nome de Branch</title>
 </head>
 <body>
+  <h1>Gerar</h1>
+  <div class="form-group" [formGroup]="branchName">
+    <input type="number" class="form-control" formControlName="number" id="trf-number" placeholder="Número da tarefa">
+    <input type="text" class="form-control" formControlName="keywordOne" spellcheck="true" id="keyword" maxlenght="4" placeholder="Palavra-chave 1">
+    <input type="text" class="form-control" formControlName="keywordTwo" id="keyword" placeholder="Palavra-chave 2">
+    <input type="text" class="form-control" formControlName="keywordThree" id="keyword" placeholder="Palavra-chave 3">
+    <input type="text" class="form-control" formControlName="keywordFour" id="keyword" placeholder="Palavra-chave 4">
+    <div class="button-box">
+      <button (click)="buildBranchName()">Gerar</button>
+    </div>
+    <div>
+      <span><strong>{{name}}</strong></span>
+    </div>
+  </div>
 
 </body>
 </html>
