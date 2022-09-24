@@ -1,5 +1,8 @@
+import { SharedComponentService } from './../shared-component-service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ResultDialogComponent } from './../result-dialog/result-dialog.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,9 +11,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class HomeComponent implements OnInit {
 
 branchName:any;
-name: string = '';
+name: string;
 
-  constructor() {  }
+  constructor(public dialog: MatDialog, public sharedComponentService: SharedComponentService) {
+    this.name = '';
+   }
 
   ngOnInit(): void {
     this.createForm();
@@ -38,6 +43,16 @@ name: string = '';
       concat += `-${keyFour.toLowerCase()}`;
     }
     this.name = concat.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    console.log(this.name);
+    this.sharedComponentService.setData(this.name);
+    this.openDialog();
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ResultDialogComponent, {
+      data: this.name
+    });
+    dialogRef.afterClosed().subscribe((result: any) => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }

@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Aqui está o nome da sua branch!</h2>
+<mat-dialog-content class="mat-typography">
+  <span><strong>{{name}}</strong></span>
+  <h3>Copie clicando no botão abaixo.</h3>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class="btn-close">Fechar</button>
+  <button mat-raised-button class="btn-{{btnClass}}" (click)="updateButtonClass()" [cdkCopyToClipboard]="name">{{btnName}}</button>
+</mat-dialog-actions>
