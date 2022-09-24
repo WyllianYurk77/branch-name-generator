@@ -1,0 +1,24 @@
+h3 {
+  margin: 2rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.btn-copy {
+  background-color: #C2185B;
+}
+
+.btn-copy:hover {
+  background-color: #c2185cab;
+}
+
+.btn-copied {
+ background-color: #0BDE8E;
+ color: black;
+}
+
+.btn-close {
+  background-color: #454545;
+}

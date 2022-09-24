@@ -23,5 +23,11 @@ html, body {
 }
 
 .mat-form-field.mat-focused, .mat-form-field-ripple, .mat-form-field-underline {
-  color: white;
+  color: white !important;
 }
+
+.mat-form-field-ripple:last-of-type{
+  background-color: white !important;
+  display: none;
+}
+

@@ -11,11 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ResultDialogComponent } from './components/result-dialog/result-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { SharedComponentService } from './components/shared-component-service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ResultDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +30,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    ClipboardModule
+    ClipboardModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [HomeComponent, SharedComponentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

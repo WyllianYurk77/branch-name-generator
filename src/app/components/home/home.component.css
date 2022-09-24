@@ -1,6 +1,10 @@
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+span:first-of-type {
+  background-color: white !important;
 }
 
 h1 {
@@ -30,6 +34,10 @@ button {
   width: 100%;
 }
 
+button:hover {
+  background-color: #c2185cab;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -38,4 +46,5 @@ input::-webkit-inner-spin-button {
 
 input, span {
   color: white;
+  caret-color: white;
 }
