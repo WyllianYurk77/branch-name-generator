@@ -15,12 +15,4 @@ export class SharedComponentService {
   setData(value: any): void {
     this.object.next(value);
   }
-
-  // get data(): any {
-  //   return this.object;
-  // }
-
-  // set data(value: any) {
-  //   this.object = value;
-  // }
 }
