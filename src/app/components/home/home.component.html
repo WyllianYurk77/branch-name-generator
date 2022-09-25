@@ -10,31 +10,35 @@
   <h1>Gerar</h1>
 
   <div class="form-group" [formGroup]="branchName">
-    <mat-form-field hintLabel="Max 6 characters" class="example-full-width" appearance="fill">
+    <mat-form-field hintLabel="Max 5 dígitos" class="example-full-width" appearance="fill">
       <mat-label>Número da tarefa</mat-label>
-      <input matInput type="number" class="form-control" #num max="999999" formControlName="number" id="trf-number" placeholder="Ex: 18536">
-      <mat-hint id="hint" align="end">{{num.value.length || 0}}/6</mat-hint>
+      <input matInput type="text" class="form-control" #num formControlName="number" maxlength="5" id="trf-number" placeholder="Ex: 18536" required>
+      <mat-hint id="hint" align="end">{{num.value.length || 0}}/5</mat-hint>
+      <mat-error *ngIf="validateFields">O número da tarefa é obrigatório.</mat-error>
     </mat-form-field>
 
-    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+    <mat-form-field hintLabel="Max 20 caracteres" class="example-full-width" appearance="fill">
       <mat-label>Palavra-chave 1</mat-label>
-      <input matInput type="text" class="form-control" #one formControlName="keywordOne" maxlength="20" spellcheck="true" id="keyword" maxlenght="4" placeholder="Ex: erro">
+      <input matInput type="text" class="form-control" #one formControlName="keywordOne" maxlength="20" spellcheck="true" id="keyword" placeholder="Ex: erro" required>
       <mat-hint id="hint" align="end">{{one.value.length || 0}}/20</mat-hint>
+      <mat-error *ngIf="validateFields">A palavra-chave 1 é obrigatória.</mat-error>
     </mat-form-field>
 
-    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+    <mat-form-field hintLabel="Max 20 caracteres" class="example-full-width" appearance="fill">
       <mat-label>Palavra-chave 2</mat-label>
-      <input matInput type="text" class="form-control" #two formControlName="keywordTwo" maxlength="20" id="keyword" placeholder="Ex: finalizar">
+      <input matInput type="text" class="form-control" #two formControlName="keywordTwo" maxlength="20" id="keyword" placeholder="Ex: finalizar" required>
       <mat-hint id="hint" align="end">{{two.value.length || 0}}/20</mat-hint>
+      <mat-error *ngIf="validateFields">A palavra-chave 2 é obrigatória.</mat-error>
     </mat-form-field>
 
-    <mat-form-field hintLabel="Max 20 characters" class="example-full-width" appearance="fill">
+    <mat-form-field hintLabel="Max 20 caracteres" class="example-full-width" appearance="fill">
       <mat-label>Palavra-chave 3</mat-label>
-      <input matInput type="text" class="form-control" #three formControlName="keywordThree" maxlength="20" id="keyword" placeholder="Ex: matricula">
+      <input matInput type="text" class="form-control" #three formControlName="keywordThree" maxlength="20" id="keyword" placeholder="Ex: matricula" required>
       <mat-hint id="hint" align="end">{{three.value.length || 0}}/20</mat-hint>
+      <mat-error *ngIf="validateFields">A palavra-chave 3 é obrigatória.</mat-error>
     </mat-form-field>
 
-    <mat-form-field [hideRequiredMarker]="true" hintLabel="Max 20 characters" class="example-full-width key-4" appearance="fill">
+    <mat-form-field [hideRequiredMarker]="true" hintLabel="Max 20 caracteres" class="example-full-width" appearance="fill">
       <mat-label>Palavra-chave 4</mat-label>
       <input matInput type="text" class="form-control" #four formControlName="keywordFour" maxlength="20" id="keyword" placeholder="Ex: estudante" required="false">
       <mat-hint id="hint" align="end">{{four.value.length || 0}}/20</mat-hint>
