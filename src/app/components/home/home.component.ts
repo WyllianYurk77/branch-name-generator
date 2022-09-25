@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ResultDialogComponent } from './../result-dialog/result-dialog.component';
 import { SharedComponentService } from './../shared-component-service';
+import { createMask } from '@ngneat/input-mask';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,6 +13,10 @@ export class HomeComponent implements OnInit {
 
   branchName:any;
   name: string;
+
+  onlyNumbersMask = createMask<string>({
+    regex: "\\d*",
+  });
 
   constructor(public dialog: MatDialog, public sharedComponentService: SharedComponentService, private fb: FormBuilder) {
     this.name = '';
