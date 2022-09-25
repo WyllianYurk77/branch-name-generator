@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ResultDialogComponent } from './components/result-dialog/result-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SharedComponentService } from './components/shared-component-service';
+import { InputMaskModule } from '@ngneat/input-mask';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SharedComponentService } from './components/shared-component-service';
     MatInputModule,
     MatFormFieldModule,
     ClipboardModule,
-    MatDialogModule
+    MatDialogModule,
+    InputMaskModule
   ],
   providers: [HomeComponent, SharedComponentService],
   bootstrap: [AppComponent]
