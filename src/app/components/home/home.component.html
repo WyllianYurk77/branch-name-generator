@@ -7,9 +7,16 @@
   <title>Gerador de Nome de Branch</title>
 </head>
 <body>
-  <h1>Gerar</h1>
+
 
   <div class="form-group" [formGroup]="branchName">
+    <div class="titles">
+      <div><img id="esig" src="/assets/logo-esig.png" alt="Esig Software"></div>
+      <div>
+        <h1>Gerar o Nome da Branch</h1>
+      </div>
+      <div class=".vila-logo"><img id="vila" src="/assets/vila-oculta-logo.png" alt="Vila Oculta do Código"></div>
+    </div>
     <mat-form-field hintLabel="Max 5 dígitos" class="example-full-width" appearance="fill">
       <mat-label>Número da tarefa</mat-label>
       <input matInput type="text" class="form-control" #num formControlName="number" maxlength="5" [inputMask]="onlyNumbersMask" id="trf-number" placeholder="Ex: 18536" required>
@@ -43,9 +50,11 @@
       <input matInput type="text" class="form-control" #four formControlName="keywordFour" maxlength="20" id="keyword" placeholder="Ex: estudante" required="false">
       <mat-hint id="hint" align="end">{{four.value.length || 0}}/20</mat-hint>
     </mat-form-field>
-
-    <div class="button-box example-button-row">
-      <button mat-raised-button color="primary" (click)="buildBranchName()">Gerar</button>
+    <div class="bottom">
+      <p class="rights">&copy; Made by Wyllian</p>
+      <div class="button-box example-button-row">
+        <button mat-raised-button color="primary" (click)="buildBranchName()">Gerar</button>
+      </div>
     </div>
   </div>
 </body>
