@@ -1,6 +1,6 @@
-import { SharedComponentService } from './../shared-component-service';
-import { Component, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { SharedComponentService } from './../shared-component-service';
 
 @Component({
   selector: 'app-result-dialog',
