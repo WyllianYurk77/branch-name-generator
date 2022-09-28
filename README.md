@@ -21,7 +21,7 @@
   <p align="center">
     Acesse através do link
     <br />
-    <a href="https://wyllianyurk77.github.io/branch-name-generator/"><strong>Link para o gerador »</strong></a>
+    <a href="https://wyllianyurk77.github.io/branch-name-generator/" target="_blank"><strong>Link para o gerador »</strong></a>
     <br />
     <br />
   
