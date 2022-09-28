@@ -1,14 +1,3 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,14 +7,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -42,12 +23,7 @@
     <a href="https://wyllianyurk77.github.io/branch-name-generator/"><strong>Link para o gerador »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+  
 </div>
 
 
@@ -57,24 +33,18 @@
   <summary>Conteúdo</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o Projeto</a>
+      <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Construído com</a></li>
+        <li><a href="#construído-com">Construído com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Como utilizar</a>
+      <a href="#como-utilizar">Como utilizar</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#observações">Observações</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contato">Contato</a></li>
   </ol>
 </details>
 
@@ -83,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
 
-<img src="https://i.imgur.com/ArwIeZe.png" alt="Home" width="70%">
+<img src="https://i.imgur.com/ArwIeZe.png" alt="Home" width="90%">
 
 Este projeto foi uma inciativa para manter uma padronização nos processos de desenvolvimento das equipes do SIGEDUC-BA da empresa Esig Software.
 Muitas vezes é difícil de lembrar todos os detalhes ao criar os nomes das branches que controlam as versões do projeto ao iniciar uma tarefa, então, o Gerador de Nome de Branch facilitará esse processo e exercerá o papel de template para as branches criadas a partir dele.
@@ -128,7 +98,7 @@ Após ter preenchido os campos, clique no botão **Gerar** para ir para a janela
 
 Na janela que se abriu estará o nome da sua branch que poderá ser copiapa através do botão **Copiar**, que informará quando for clicado que a branch foi copiada.
 
-**Observações:**
+### **Observações:**
 
 * A branch só será gerada se os campos obrigatórios forem preenchidos;
 * O nome da branch sempre será gerado em minúsculo e sem acentos;
@@ -140,27 +110,11 @@ Na janela que se abriu estará o nome da sua branch que poderá ser copiapa atra
 <!-- CONTACT -->
 ## Contato
 
-Wyllian - ![Discord](https://img.shields.io/badge/%3CAll7232%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white) - wyllian.mendes@esig.com
+Wyllian - wyllian.mendes@esig.com
 
 Link do projeto: [https://github.com/WyllianYurk77/branch-name-generator](https://github.com/WyllianYurk77/branch-name-generator)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+![Discord](https://img.shields.io/badge/%3CAll7232%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
