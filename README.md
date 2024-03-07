@@ -115,7 +115,7 @@ Wyllian - wyllian.mendes@esig.com
 
 Link do projeto: [https://github.com/WyllianYurk77/branch-name-generator](https://github.com/WyllianYurk77/branch-name-generator)
 
-![Discord](https://img.shields.io/badge/%3CAll7232%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Discord](https://img.shields.io/badge/%3Call%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
