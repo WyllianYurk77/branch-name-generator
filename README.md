@@ -97,7 +97,7 @@ Para gerar o nome da sua branch preencha os campos de:
 
 Após ter preenchido os campos, clique no botão **Gerar** para ir para a janela com o nome da sua branch.
 
-Na janela que se abriu estará o nome da sua branch que poderá ser copiapa através do botão **Copiar**, que informará quando for clicado que a branch foi copiada.
+Na janela que se abriu estará o nome da sua branch que poderá ser copiada através do botão **Copiar**, que informará quando for clicado que a branch foi copiada.
 
 ### **Observações:**
 
